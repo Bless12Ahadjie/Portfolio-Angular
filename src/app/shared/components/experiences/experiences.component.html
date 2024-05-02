@@ -1,0 +1,54 @@
+<div class="px-[30px] md:px-[70px] 2xl:px-[130px] mt-[200px]">
+    <div class="flex flex-col justify-center items-start">
+        <div class="flex flex-col md:flex-row justify-start md:justify-start items-start  md:items-start gap-[120px] md:gap-[50px] lg:gap-[200px] 2xl:gap-[600px]">
+            <div>
+                <p class="text-[#DC2B46] italic text-[25px]">Bless Ahadjie</p>
+                <p class="text-[#58111C] text-[40px] md:text-[56px] font-bold">Experiences</p>
+                <p class="text-[#DC2B46] text-[50px] absolute mt-[-40px] ml-[25px] ">Work</p>
+                <div
+                    class="flex flex-col justify-center items-center bg-[#DC2B46] h-[39px] w-[150px] mt-[40px] ml-[25px]">
+                    <p class="font-bold text-[24px]">1+ year</p>
+                </div>
+                <div class="flex justify-start items-center mt-[20px]">
+                    <div class="bg-[#DC2B46] w-[10px] h-[10px] rounded-full ml-[25px]">
+
+                    </div>
+                    <div class="bg-black border-[2px] border-[#DC2B46] w-[10px] h-[10px] rounded-full ml-[25px]">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col gap-[50px]">
+
+            @for (experience of experiences; track experience.id) {
+
+            <div class="flex justify-start items-start gap-[40px]">
+                <div class="flex flex-col justify-center items-center                                                   ">
+                    <div class="bg-[#DC2B46] w-[30px] h-[30px] rounded-full ml-[25px]"> </div>
+                    <p class="text-gray-400 text-[11px] ml-[30px] mb-[20px] md:mb-0 md:ml-[50px] text-wrap text-ellipsis">{{experience.startDate + '-' +experience.endDate}}</p>
+                    <div class="bg-[#58111c] w-[1px] h-[140px] absolute mt-[220px] ml-[26px]"></div>
+
+              </div>
+
+
+                <div>
+                    <p class="text-[#58111C] text-[32px] font-semibold ">{{experience.company + '-' + experience.position}}</p>
+                    <ul class="marker:text-[#58111C] list-disc list-style pl-4 text-[#DC2B46] mt-[30px]">
+                        @for (details of experience.details; track $index) {
+                        <li>{{details}}</li>
+                    }
+                    
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+        </div>
+
+    </div>
+</div>
+<div class="w-[340px] h-[160px] md:w-[390px] md:h-[200px] lg:w-[600px] lg:h-[228px] 2xl:w-[800px] 2xl:h-[270px] border border-[#DC2B46] rounded-[60%] absolute mt-[-120px] md:mt-[-790px] lg:mt-[-540px] 2xl:mt-[-480px]">
+
+</div>

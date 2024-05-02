@@ -1,0 +1,143 @@
+<div class=" px-[70px] 2xl:px-[130px] mt-[200px] mb-[250px]">
+    <p class="text-[60px] md:text-[111px] font-medium text-white text-left ">Projects</p>
+
+    <div class="flex flex-col justify-center items-center ">
+
+        <div class="flex justify-center items-center gap-[10px] md:gap-[20px">
+            <div class="flex flex-col gap-[10px] md:gap-[20px]">
+
+                <a href="https://devjobs-bless.vercel.app" class="group transition-transform duration-1000" [ngClass]="{
+                    'translate-x-[0px]': scrollDirection === 'down',
+                    '-translate-x-[700px]':  scrollDirection === 'up',
+                    'rotate-y-180': isFlipped == true
+
+                }" (mouseenter)="flipCard()" (mouseleave)="unflipCard()">
+                    <div
+                        class="flex flex-col relative justify-center transition-transform transform-style-preserve-3d items-center bg-green-600 w-[160px] md:w-[400px] lg:w-[500px] lg:h-[312px]  2xl:w-[668px] 2xl:h-[429px]">
+                        <img src="../../../../assets/handsholdingDevjobs.png" alt="">
+                    </div>
+                    @if (isFlipped) {
+                    <div class="text-white w-[250px]">
+                        <div
+                            class="flip-card flex flex-col lg:mt-[-320px] 2xl:mt-[-429px] justify-center absolute items-center bg-[#191919] translate-y-[180deg] w-[160px] md:w-[400px] lg:w-[500px] lg:h-[329px]  2xl:w-[668px] 2xl:h-[449px]">
+                            <p class="text-[32px] font-semibold ">DevJobs</p>
+                            <div class="bg-[#DC2B46] h-[1px] w-[160px]"></div>
+                            <p class="w-[200px]">This a s job search web app</p>
+                            <p class="mt-[10px]">Tools Used</p>
+                            <ul>
+                                <li>Angular</li>
+                            </ul>
+
+
+
+                        </div>
+
+                    </div>
+                    }
+                </a>
+                <a href="https://clearliink.vercel.app/" class="group transition-transform duration-1000" [ngClass]="{
+                    'translate-x-[0px]': scrollDirection === 'down',
+                    '-translate-x-[700px]':  scrollDirection === 'up',
+                    'rotate-y-180': isFlipped2 == true
+
+                }"
+                (mouseenter)="isFlipped2 = true" (mouseleave)="isFlipped2 = false"
+                >
+                    <div
+                        class="flex flex-col justify-center items-center bg-white md:w-[400px] lg:w-[500px] lg:h-[312px] 2xl:w-[668px] 2xl:h-[429px]">
+                        <img src="../../../../assets/clearLink.png" alt="">
+                    </div>
+                    @if (isFlipped2) {
+                        <div class="text-white w-[250px]">
+                            <div
+                                class="flip-card flex flex-col lg:mt-[-320px] 2xl:mt-[-429px]  justify-center absolute items-center bg-[#191919] translate-y-[180deg] w-[160px] md:w-[400px] lg:w-[500px] lg:h-[329px]  2xl:w-[668px] 2xl:h-[449px]">
+                                <p>DevJobs</p>
+                                <p>This a s job search web app</p>
+                                <p>Tools Used</p>
+                                <ul>
+                                    <li>Angular</li>
+                                </ul>
+    
+    
+    
+                            </div>
+    
+                        </div>
+                        }
+                </a>
+
+                <div class="flex flex-col justify-center items-center bg-[#191919] h-[50px] md:h-[172.8px] group transition-transform duration-1000"
+                    [ngClass]="{
+                    'translate-x-[0px]': scrollDirection === 'down',
+                    '-translate-x-[700px]':  scrollDirection === 'up',
+                   
+
+                }"
+                >
+                    <p class="text-white text-[14px] md:text-[35px] font-medium">I have a blog to launch</p>
+                    <div
+                        class="text-white text-[12px] bg-black w-[100px] md:w-[150px] h-[20px] md:h-[40px] rounded-full p-[8px] md:p-[11px] flex flex-col justify-center items-center">
+                        coming soon</div>
+
+                </div>
+
+            </div>
+            <div class="flex flex-col gap-[20px]">
+                <a href="https://markdown-edzitor.vercel.app/" class="group transition-transform duration-1000"
+                    [ngClass]="{
+                    'translate-x-[800px]': scrollDirection === 'up',
+                    '-translate-x-[0px]':  scrollDirection === 'down',
+                    'rotate-y-180': isFlipped3 == true
+
+                }"
+                 (mouseenter)="isFlipped3 = true" (mouseleave)="isFlipped3 = false"
+                >
+                    <div
+                        class=" h-[180px] w-[160px] md:w-[400px] lg:w-[500px]  2xl:w-[668px] md:h-[677px] bg-[#D2C1F5] flex flex-col justify-center items-center">
+                        <img src="../../../../assets/markdowns.png" class=" md:mt-[260px] lg:mt-[57px]  " alt="">
+                    </div>
+
+                    @if (isFlipped3) {
+                        <div class="text-white w-[250px]">
+                            <div
+                                class="flip-card mark flex flex-col mt-[-678px] justify-center absolute items-center bg-[#191919] translate-y-[180deg] w-[160px] md:w-[400px] lg:w-[500px] lg:h-[679px]  2xl:w-[668px] 2xl:h-[429px]">
+                                <div class=" ">
+                                    <p class="text-[32px] font-semibold ">Markdown Edzitor</p>
+                                    <div class="bg-[#DC2B46] h-[1px] w-[290px]"></div>
+                                <p  class="w-[350px] text-justify">markdown-edzitor is a powerful and user-friendly editor that allows you to easily create, edit, and manage your markdown documents.</p>
+                                <p class="mt-[20px] text-[#58111C] font-bold">Tools Used</p>
+                                <ul class="marker:bg-[#DC2B46]">
+                                    <li>Next.js</li>
+                                    <li>TypeScript</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>React Markdown</li>
+                                    <li>React toastify</li>
+                                </ul>
+                                </div>
+    
+    
+    
+                            </div>
+    
+                        </div>
+                        }
+
+                </a>
+                <a href="" class="group transition-transform duration-1000" [ngClass]="{
+                    'translate-x-[800px]': scrollDirection === 'up',
+                    '-translate-x-[0px]':  scrollDirection === 'down'
+
+                }">
+                    <div
+                        class="flex flex-col justify-center items-center z-[-10px]600 md:w-[400px] lg:w-[500px]  2xl:w-[668px] 2xl:h-[352px]">
+                        <img src="../../../../assets/Name.png" class="" alt="">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
